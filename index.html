@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shakil - Ethical Hacker</title>
+  <meta name="description" content="Official hacking zone of Shakil - Level 8 Ethical Hacker">
+  <meta name="keywords" content="Shakil Hacker, Ethical Hacking, Tools, Pranks, Demos">
+  <meta name="author" content="Shakil">
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #00FF00;
+    }
+    a {
+      color: cyan;
+      text-decoration: none;
+    }
+    .section {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>👨‍💻 Shakil - Ethical Hacker</h1>
+  <p>Level: 8 | From: Jessore | Hacker ID: Shakil_BCA</p>
+
+  <div class="section">
+    <h2>🛠️ Tools</h2>
+    <ul>
+      <li><a href="#">Admin Panel Finder</a></li>
+      <li><a href="#">Cookie Stealer Demo</a></li>
+      <li><a href="#">Fake Login Page</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🖼️ Screenshot Gallery</h2>
+    <p>Coming soon...</p>
+  </div>
+
+  <div class="section">
+    <h2>📚 Learning Path</h2>
+    <p>Currently learning: Level 8 - Virus, Tracing, Honeypot, etc.</p>
+  </div>
+
+  <div class="section">
+    <h2>🌐 Contact</h2>
+    <p>Email: shakil.hacker@protonmail.com</p>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shakil Root Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+      animation: flicker 0.15s infinite;
+    }
+
+    @keyframes flicker {
+      0% {opacity: 1;}
+      50% {opacity: 0.98;}
+      100% {opacity: 1;}
+    }
+
+    .header {
+      color: red;
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 0 0 20px red;
+    }
+
+    .terminal {
+      border: 2px solid #0f0;
+      padding: 15px;
+      background-color: #101010;
+      box-shadow: 0 0 25px green;
+    }
+
+    .blink {
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .warn {
+      color: yellow;
+      font-weight: bold;
+    }
+
+    .access-granted {
+      color: #00ff00;
+      font-size: 18px;
+    }
+
+    .ip-log {
+      color: cyan;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">☣️ Root Access Panel - Shakil ☣️</div>
+  <div class="terminal">
+    <p>Initializing kernel exploits...</p>
+    <p class="blink">Connecting to internal server...</p>
+    <p class="warn">WARNING: Unauthorized access is strictly prohibited!</p>
+    <p class="access-granted">Access Granted: SHAKIL@root#</p>
+    <p>Active Payloads: [XSS], [RCE], [Phishing], [Backdoor]</p>
+    <p class="ip-log">User IP Logged: 192.168.X.XXX</p>
+    <p>Status: 🔒 Secured | 🔥 Monitoring</p>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shakil Hacker Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #000;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 2em;
+      color: red;
+      text-shadow: 0 0 10px red;
+      margin-bottom: 30px;
+    }
+
+    .tool {
+      background: #111;
+      padding: 15px;
+      border: 1px solid #0f0;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px green;
+    }
+
+    button {
+      background: black;
+      color: lime;
+      border: 1px solid lime;
+      padding: 8px 12px;
+      font-family: monospace;
+    }
+
+    .result {
+      color: yellow;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">☠️ SHAKIL HACKER TOOLS ☠️</div>
+
+  <div class="tool">
+    <h3>🌍 Fake IP Tracer</h3>
+    <button onclick="generateIP()">Trace IP</button>
+    <div class="result" id="ipResult"></div>
+  </div>
+
+  <div class="tool">
+    <h3>💉 Virus Injector (Fake)</h3>
+    <button onclick="injectVirus()">Inject Virus</button>
+    <div class="result" id="virusResult"></div>
+  </div>
+
+  <div class="tool">
+    <h3>🍪 Cookies Stealer (Demo)</h3>
+    <button onclick="stealCookies()">Steal Cookies</button>
+    <div class="result" id="cookieResult"></div>
+  </div>
+
+  <div class="tool">
+    <h3>🎣 Phishing Page Test</h3>
+    <button onclick="simulatePhish()">Simulate</button>
+    <div class="result" id="phishResult"></div>
+  </div>
+
+  <script>
+    function generateIP() {
+      let fakeIP = `192.168.${Math.floor(Math.random()*255)}.${Math.floor(Math.random()*255)}`;
+      document.getElementById("ipResult").innerText = "User IP: " + fakeIP;
+    }
+
+    function injectVirus() {
+      document.getElementById("virusResult").innerText = "💀 Malware Injected in background.js...";
+    }
+
+    function stealCookies() {
+      document.getElementById("cookieResult").innerText = "🍪 Cookies captured: session=shakil123; token=0xhack";
+    }
+
+    function simulatePhish() {
+      document.getElementById("phishResult").innerText = "🎯 Login Page sent to target. Awaiting credentials...";
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Virus Scan | Shakil Hacker</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      font-size: 18px;
+      padding: 20px;
+    }
+    #scan {
+      border: 2px solid red;
+      padding: 10px;
+      margin-top: 20px;
+      background: #111;
+    }
+    .blink {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>💀 Virus Scanner [Shakil-Hack.exe]</h1>
+  <div id="scan">
+    Initializing scan...<br><br>
+  </div>
+
+  <script>
+    const messages = [
+      "Scanning RAM...",
+      "Bypassing Firewall...",
+      "Accessing System32...",
+      "Injecting payload...",
+      "Uploading data to ShakilHQ...",
+      "Encrypting files...",
+      "Scan Complete: 23 Threats Found!",
+      "Deploying Rootkit...",
+      "System Compromised. Contact Shakil."
+    ];
+    let i = 0;
+    const scan = document.getElementById("scan");
+
+    function nextLine() {
+      if (i < messages.length) {
+        scan.innerHTML += messages[i] + "<br>";
+        i++;
+        setTimeout(nextLine, 1000);
+      } else {
+        scan.innerHTML += "<br><span class='blink'>💀 WARNING: SYSTEM BREACHED 💀</span>";
+      }
+    }
+    setTimeout(nextLine, 1000);
+  </script>
+</body>
+</html>
